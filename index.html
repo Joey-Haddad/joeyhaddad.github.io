@@ -1,23 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>joey</title>
-    <style>
-        body {
-            background-color: bisque;
-            color: black;
-        }
-        h1 {
-            font-size: 40px;
-            font-family: 'monospace', monospace;
-            text-align: center;
-            margin-top: 100px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Joey's Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      background-color: bisque;
+      color: black;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 50px 0;
+    }
+    header h1 {
+      font-size: 40px;
+      font-family: 'monospace', monospace;
+      margin: 0;
+    }
+    header h2 {
+      font-size: 24px;
+      margin-top: 10px;
+      font-weight: normal;
+    }
+    
+    /* Book Reviews Section */
+    .book-review-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .book-review-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    /* Book Card Styles */
+    .book-card {
+      display: flex;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .book-card:hover {
+      transform: translateY(-5px);
+    }
+    .book-card img {
+      width: 120px;
+      object-fit: cover;
+    }
+    .book-card-content {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .book-card-content h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .book-card-content p {
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .book-card-content a {
+      align-self: flex-start;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    .book-card-content a:hover {
+      color: #000;
+    }
+  </style>
 </head>
 <body>
+  <!-- Header Section -->
+  <header>
     <h1>hi, i'm joey</h1>
-    <h1>welcome</h1>
+  </header>
+  
+  <!-- Book Reviews Section -->
+  <section class="book-review-section">
+    <h2>Book Reviews</h2>
+    
+    <!-- Book Card Example -->
+    <div class="book-card">
+      <img src="/Users/joeyhaddad/Desktop/code/joeyhaddad.github.io/zerotoone.jpg" alt="Book Cover">
+      <div class="book-card-content">
+        <h3>Zero To One</h3>
+        <p>This is the first few sentences of my review, giving you a glimpse of what to expect from the full review...</p>
+        <a href="zerotoone.html">Read More</a>
+      </div>
+    </div>
+    
+    <!-- You can add more book cards here -->
+  </section>
 </body>
 </html>
